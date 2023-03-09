@@ -117,6 +117,18 @@ h5 {
   padding: 0;
 }
 
+h1 {
+  font-size: var(--step-3);
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+p {
+  font-size: var(--step--1);
+}
+
 /***********  Header ***********/
 
 .header {
@@ -189,4 +201,48 @@ h5 {
 .btn:hover {
   border: 1px solid var(--third-color);
   box-shadow: 0 0 1rem 0.1rem var(--third-color);
+}
+
+/***********  main ***********/
+
+main {
+  width: 1320px;
+  max-width: 100%;
+  padding: 1.3rem 3rem;
+  margin: 0 auto;
+}
+
+.hero-gym {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'title title title'
+    'templeate-one img templeate-two';
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.man {
+  grid-area: img;
+}
+
+.gym:first-child {
+  grid-area: templeate-one;
+}
+
+.gym:last-child {
+  grid-area: templeate-two;
+}
+
+.gym {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

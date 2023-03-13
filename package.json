@@ -17,5 +17,8 @@
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^2.8.4",
     "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.48.0"
   }
 }
